@@ -5,12 +5,12 @@ class Student {
     this.course = course;
   }
   displayDetails() {
-    console.log("Student ID: " + this.id);
-    console.log("Student Name: " + this.name);
-    console.log("Course: " + this.course);
+    return `Student ID: ${this.id},
+    Student Name: ${this.name},
+    Course: ${this.course}`;
+  }
+  getStudentName() {
+    return this.name;
   }
 }
-// Create a student object
-const student1 = new Student(101, "John", "Computer Science");
-// Display student details
-student1.displayDetails();
+module.exports = Student;
