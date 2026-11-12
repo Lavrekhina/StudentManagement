@@ -15,4 +15,13 @@ describe("Student Class Tests", () => {
     expect(student.displayDetails()).toContain("David");
     expect(student.displayDetails()).toContain("Computer Science");
   });
+  test("Should return student email", () => {
+    const student = new Student(
+      104,
+      "Alex",
+      "Computer Science",
+      "alex@example.com",
+    );
+    expect(student.getStudentEmail()).toBe("alex@example.com");
+  });
 });
