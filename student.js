@@ -1,8 +1,9 @@
 class Student {
-  constructor(id, name, course) {
+  constructor(id, name, course, email) {
     this.id = id;
     this.name = name;
     this.course = course;
+    this.email = email;
   }
   displayDetails() {
     return `Student ID: ${this.id},
@@ -11,6 +12,9 @@ class Student {
   }
   getStudentName() {
     return this.name;
+  }
+  getStudentEmail() {
+    return this.email;
   }
 }
 module.exports = Student;
